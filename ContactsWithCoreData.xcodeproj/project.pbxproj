@@ -53,6 +53,8 @@
 		EA6BFAEF1F68F0C90020028A /* NIError.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BFADB1F68F0C90020028A /* NIError.m */; };
 		EA6BFAF01F68F0C90020028A /* NIFoundationMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BFADC1F68F0C90020028A /* NIFoundationMethods.m */; };
 		EA6BFAF11F68F0C90020028A /* NIImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6BFADD1F68F0C90020028A /* NIImageUtilities.m */; };
+		EA909F1F1F6928D4008F8579 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA909F1E1F6928D4008F8579 /* CoreData.framework */; };
+		EA909F221F69290B008F8579 /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA909F211F69290B008F8579 /* AddContactViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +170,9 @@
 		EA6BFADC1F68F0C90020028A /* NIFoundationMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIFoundationMethods.m; sourceTree = "<group>"; };
 		EA6BFADD1F68F0C90020028A /* NIImageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NIImageUtilities.m; sourceTree = "<group>"; };
 		EA6BFAF21F68F11C0020028A /* TabbarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabbarDelegate.h; sourceTree = "<group>"; };
+		EA909F1E1F6928D4008F8579 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EA909F201F69290B008F8579 /* AddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
+		EA909F211F69290B008F8579 /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +180,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA909F1F1F6928D4008F8579 /* CoreData.framework in Frameworks */,
 				95221F002C5B5FC43F934966 /* Pods_ContactsWithCoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +207,7 @@
 		52B3E5878D6EDB0EF737ACB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA909F1E1F6928D4008F8579 /* CoreData.framework */,
 				03466151AD135B150C1854E1 /* Pods_ContactsWithCoreData.framework */,
 			);
 			name = Frameworks;
@@ -277,6 +284,8 @@
 				EA6BFA701F68EFF20020028A /* TrueCallerDemoTabbarViewController.m */,
 				EA6BFA711F68EFF20020028A /* ContactListViewController.h */,
 				EA6BFA721F68EFF20020028A /* ContactListViewController.m */,
+				EA909F201F69290B008F8579 /* AddContactViewController.h */,
+				EA909F211F69290B008F8579 /* AddContactViewController.m */,
 			);
 			name = ContactViewController;
 			sourceTree = "<group>";
@@ -569,6 +578,7 @@
 				EA6BFAE81F68F0C90020028A /* NISDKAvailability.m in Sources */,
 				EA6BFAE51F68F0C90020028A /* NIOperations.m in Sources */,
 				EA6BFAEB1F68F0C90020028A /* NIViewRecycler.m in Sources */,
+				EA909F221F69290B008F8579 /* AddContactViewController.m in Sources */,
 				EA6BFA761F68EFF20020028A /* TrueCallerDemoTabbarViewController.m in Sources */,
 				EA6BFA8E1F68F0700020028A /* ContactEntity.m in Sources */,
 				EA6BFAED1F68F0C90020028A /* NIDebuggingTools.m in Sources */,

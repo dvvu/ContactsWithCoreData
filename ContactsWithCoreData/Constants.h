@@ -19,6 +19,8 @@
 #define DEVICE_WIDTH [[UIScreen mainScreen] bounds].size.width
 #define DEVICE_HEIGHT [[UIScreen mainScreen] bounds].size.height
 
+#define FONTSIZE_SCALE [[UIScreen mainScreen] bounds].size.height == 480 ? 1 : ([[UIScreen mainScreen] bounds].size.height == 568 ? 1.12 : ([[UIScreen mainScreen] bounds].size.width == 375 ? 1.21 : ([[UIScreen mainScreen] bounds].size.width == 414 ? 1.23 : 1.23)))
+
 #endif /* Constants_h */
 
 

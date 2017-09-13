@@ -8,13 +8,14 @@
 
 #import "ContactListViewController.h"
 #import "ResultTableViewController.h"
-#import "ContactCellObject.h"
+#import "AddContactViewController.h"
 #import "ContactTableViewCell.h"
+#import "ContactCellObject.h"
+#import "ContactCache.h"
 #import "NimbusModels.h"
 #import "ContactBook.h"
 #import "NimbusCore.h"
 #import "Constants.h"
-#import "ContactCache.h"
 #import "Masonry.h"
 
 @interface ContactListViewController () <NITableViewModelDelegate, UISearchResultsUpdating, UITableViewDelegate, ABPersonViewControllerDelegate>
@@ -169,6 +170,9 @@
 
 - (IBAction)addContact:(id)sender {
     
+    AddContactViewController* addContactViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"AddContactViewController"];
+    UINavigationController* navAddContactViewController = [[UINavigationController alloc] initWithRootViewController:addContactViewController];
+    [self.navigationController presentViewController:navAddContactViewController animated:YES completion:nil];
 }
 
 #pragma mark - updateSearchResultViewController
@@ -272,6 +276,8 @@
     header.textLabel.textColor = [UIColor grayColor];
     header.textLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:14];
 }
+
+#pragma mark - viewWillTransitionToSize
 
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id <UIViewControllerTransitionCoordinator>)coordinator {
     
